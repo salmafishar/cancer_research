@@ -2,12 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-original_df = pd.read_csv("cosine_similarity_real.csv", index_col=0)
-random_df = pd.read_csv("cosine_similarity_randomized.csv", index_col=0)
-perturbed_df = pd.read_csv("cosine_similarity_perturbed.csv", index_col=0)
-euclidean_real = pd.read_csv("euclidean_distance_real.csv", index_col=0)
-euclidean_random = pd.read_csv("euclidean_distance_randomized.csv", index_col=0)
-euclidean_perturbed = pd.read_csv("euclidean_distance_perturbed.csv", index_col=0)
+original_df = pd.read_csv("../data/cosine_similarity_real.csv", index_col=0)
+random_df = pd.read_csv("../data/cosine_similarity_randomized.csv", index_col=0)
+perturbed_df = pd.read_csv("../data/cosine_similarity_perturbed.csv", index_col=0)
+euclidean_real = pd.read_csv("../data/euclidean_distance_real.csv", index_col=0)
+euclidean_random = pd.read_csv("../data/euclidean_distance_randomized.csv", index_col=0)
+euclidean_perturbed = pd.read_csv("../data/euclidean_distance_perturbed.csv", index_col=0)
 
 
 def plot_histogram(df, title, bins=50):
