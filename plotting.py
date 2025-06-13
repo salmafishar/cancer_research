@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def plot_heatmap(similarity_matrix, title):
     plt.figure(figsize=(10, 8))
     sns.heatmap(similarity_matrix, cmap='viridis', xticklabels=False, yticklabels=False)
-    plt.title(f"{title} Between Drugs")
+    plt.title(f"{title}")
     plt.tight_layout()
     plt.savefig(f"{title}_heatmap.png")
     plt.close()
@@ -17,7 +17,7 @@ def plot_histogram(similarity_matrix, title, bins=50):
     plt.hist(values, bins=bins, color='skyblue', edgecolor='black')
     plt.title(title)
     plt.xlabel("Euclidean Distance")
-    plt.title(f"{title} Between Drugs")
+    plt.title(f"{title}")
     plt.tight_layout()
     plt.savefig(f"{title}_histogram.png")
     plt.close()
@@ -29,9 +29,9 @@ def plot_density(similarity_matrix, title):
     # use indices to get values of the lower triangle in the array
     low_diag_vals = euc_array[low_diag_indices]
     # plot the distribution
-    sns.kdeplot(low_diag_vals)
+    sns.kdeplot(low_diag_vals, fill = "skyblue")
     plt.xlabel("Euclidean Distance")
-    plt.title(f"{title} Between Drugs")
+    plt.title(f"{title}")
     plt.savefig(f"{title}_density.png")
     plt.close()
 
