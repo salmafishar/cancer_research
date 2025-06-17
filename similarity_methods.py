@@ -3,6 +3,7 @@ import numpy as np
 import random
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 from sklearn.preprocessing import StandardScaler
+import re
 
 # load and clean data
 def clean_data(filepath):
@@ -51,3 +52,8 @@ def calculate_euclidean_distance(df_cleaned, file_name):
     return distance_df
 
 
+
+# function that takes a list of drug names and a similarity df, and returns the df only containing the given drugs
+def get_sub_matrix(drug_names, similarity_matrix):
+    sub_matrix = similarity_matrix.loc[drug_names, drug_names]
+    return sub_matrix
