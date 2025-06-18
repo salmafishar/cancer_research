@@ -14,20 +14,23 @@ def get_files(all_drugs, value_to_pull, output_file_name):
     ftp.login()
     ftp.cwd("/v06/MSV000093659/other/Dose response data - Jurkat proteome")
 
+    file_path = "data/ftp_files"
+
     for drug in all_drugs:
         # make a string with the drug name + _ALL.txt 
         drug_file_name = f"{drug}_ALL.txt"
-        file_path = "/data/ftp_files"
+        
+        local_file_path = os.path.join(file_path, drug_file_name)
 
         # check if the file already exists locally (already downloaded it)
-        if not os.path.exists(f"{file_path}/{drug_file_name}"):
+        if not os.path.exists(local_file_path):
 
             # if it doesn't already exist, use FTP to get that file from the server
             drugPath = f"{drug}/TXTs_Classified"
             ftp.cwd(drugPath)
             
             # download/write the file in binary mode
-            with open(drug_file_name, "wb") as file:
+            with open(local_file_path, "wb") as file:
             # download the file "RETR fileName"
                 ftp.retrbinary(f"RETR {drug_file_name}", file.write)
             
@@ -35,7 +38,7 @@ def get_files(all_drugs, value_to_pull, output_file_name):
             ftp.cwd("../../")
 
         # load the file as a dataframe
-        drugData = pd.read_csv(f"{file_path}/{drug_file_name}", delimiter = "\t") 
+        drugData = pd.read_csv(local_file_path, delimiter = "\t") 
 
         # select the gene and mean intensity columns  
         pulled_data = drugData[all_columns]

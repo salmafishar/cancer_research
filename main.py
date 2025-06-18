@@ -10,7 +10,7 @@ drug_info["Drug"] = drug_info["Drug"].str.strip()
 all_drugs = drug_info["Drug"].to_list()
 
 # load and get cleaned intensity matrix
-df_cleaned, gene_names = clean_data(filepath='Mean_Intensity_Matrix_All_Drugs.csv')
+df_cleaned, gene_names = clean_data(filepath='data/Mean_Intensity_Matrix_All_Drugs.csv')
 
 # create og similarity/distance matrixes 
 og_cos_matrix = calculate_cosine_similarity(df_cleaned, "cosine_similarity_real.csv")
@@ -61,8 +61,11 @@ for drugs in drug_types.values():
 ordered_euclidean = og_euc_matrix.loc[ordered_drugs, ordered_drugs]
 
 # plot heatmap with grid lines separating each type
-plot_heatmap(ordered_euclidean, "Euclidean Distances Ordered By Type", "ordered", type_lengths, type_labels)
+plot_heatmap(ordered_euclidean, "Euclidean Distances Ordered By Type", "plots/by_type/ordered", type_lengths, type_labels)
 
 
-
+get_files(all_drugs, "Normalized_Intensity_0", "data/Normalized_Intensity_0_all_drugs")
+get_files(all_drugs, "Normalized_Intensity_1", "data/Normalized_Intensity_1_all_drugs")
+get_files(all_drugs, "Normalized_Intensity_10", "data/Normalized_Intensity_10_all_drugs")
+get_files(all_drugs, "Normalized_Intensity_100", "data/Normalized_Intensity_100_all_drugs")
 
