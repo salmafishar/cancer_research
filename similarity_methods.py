@@ -3,7 +3,6 @@ import numpy as np
 import random
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 from sklearn.preprocessing import StandardScaler
-import re
 
 # load and clean data
 def clean_data(filepath):
@@ -16,7 +15,7 @@ def clean_data(filepath):
 
     return df_cleaned, gene_names
 
-# randomize the data (randomly reorder the values of each column)
+# Randomizing the data (columns)
 def randomize_dataframe(df):
     df_randomized = df.copy()
     # shuffling values:
@@ -24,11 +23,13 @@ def randomize_dataframe(df):
         df_randomized[col] = random.sample(list(df_randomized[col]), len(df_randomized[col]))
     return df_randomized
 
+
 # perturbing the data (small noise)
 def perturb_dataframe(df, scale=1e5):
     noise = np.random.normal(loc=0, scale=scale, size=df.shape)
     df_perturbed = df + noise
     return df_perturbed
+
 
 # cosine similarity
 def calculate_cosine_similarity(df_cleaned, file_name):
@@ -37,6 +38,7 @@ def calculate_cosine_similarity(df_cleaned, file_name):
     similarity_df = pd.DataFrame(similarity_matrix, index=drug_vectors.index, columns=drug_vectors.index)
     # similarity_df.to_csv(file_name)
     return similarity_df
+
 
 # euclidean distance
 def calculate_euclidean_distance(df_cleaned, file_name):
@@ -50,7 +52,6 @@ def calculate_euclidean_distance(df_cleaned, file_name):
     distance_df = pd.DataFrame(distance_matrix, index=drug_vectors.index, columns=drug_vectors.index)
     # distance_df.to_csv(file_name)
     return distance_df
-
 
 
 # function that takes a list of drug names and a similarity df, and returns the df only containing the given drugs
