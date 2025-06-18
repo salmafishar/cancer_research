@@ -1,0 +1,145 @@
+Drug,Class
+Entinostat,HDAC inhibitor
+Mocetinostat,HDAC inhibitor
+Romidepsin,HDAC inhibitor
+Tacedinaline,HDAC inhibitor
+Tucidinostat,HDAC inhibitor
+Domatinostat,HDAC inhibitor
+Pracinostat,HDAC inhibitor
+Quisinostat,HDAC inhibitor
+Vorinostat,HDAC inhibitor
+AR-42,HDAC inhibitor
+Belinostat,HDAC inhibitor
+Citarinostat,HDAC inhibitor
+Fimepinostat,HDAC inhibitor
+Ricolinostat,HDAC inhibitor
+Panobinostat,HDAC inhibitor
+Givinostat,HDAC inhibitor
+Tasquinimod,HDAC inhibitor
+Nexturastat A,HDAC inhibitor
+ACY738,HDAC inhibitor
+Tubastatin A,HDAC inhibitor
+Trichostatin-A,HDAC inhibitor
+PCI-34051,HDAC inhibitor
+ACY775,HDAC inhibitor
+Selisistat,SIRT inhibitor
+SRT2104,SIRT inhibitor
+AZD-6482,Kinase inhibitor
+AZD-8186,Kinase inhibitor
+Copanlisib,Kinase inhibitor
+Dactolisib,Kinase inhibitor
+BGT-226,Kinase inhibitor
+Buparlisib,Kinase inhibitor
+Alpelisib,Kinase inhibitor
+Idelalisib,Kinase inhibitor
+Apitolisib,Kinase inhibitor
+GSK-1059615,Kinase inhibitor
+Omipalisib,Kinase inhibitor
+GSK-2636771,Kinase inhibitor
+PF-04691502,Kinase inhibitor
+TG-100-115,Kinase inhibitor
+Pilaralisib,Kinase inhibitor
+Voxtalisib,Kinase inhibitor
+AZD-8055,Kinase inhibitor
+Onatasertib,Kinase inhibitor
+Everolimus,Kinase inhibitor
+GDC-0349,Kinase inhibitor
+Rapamycin,Kinase inhibitor
+Temsirolimus,Kinase inhibitor
+AZD-5438,Kinase inhibitor
+SNS-032,Kinase inhibitor
+Seliciclib,Kinase inhibitor
+HMN-214,Kinase inhibitor
+Alvocidib,Kinase inhibitor
+Ribociclib,Kinase inhibitor
+Rigosertib,Kinase inhibitor
+Riviciclib,Kinase inhibitor
+Palbociclib,Kinase inhibitor
+PHA-793887,Kinase inhibitor
+Milciclib,Kinase inhibitor
+R-547,Kinase inhibitor
+RGB-286638,Kinase inhibitor
+Dinaciclib,Kinase inhibitor
+Zotiraciclib,Kinase inhibitor
+Cerdulatinib,Kinase inhibitor
+Fostamatinib (Free Base),Kinase inhibitor
+Fostamatinib,Kinase inhibitor
+TAK-659,Kinase inhibitor
+Abemaciclib,Kinase inhibitor
+Brigatinib,Kinase inhibitor
+Crizotinib,Kinase inhibitor
+Dabrafenib,Kinase inhibitor
+Dasatinib,Kinase inhibitor
+Nintedanib,Kinase inhibitor
+Sunitinib,Kinase inhibitor
+Staurosporine,Kinase inhibitor
+Tofacitinib,Kinase inhibitor
+Decernotinib,Kinase inhibitor
+Baricitinib,Kinase inhibitor
+Binimetinib,Kinase inhibitor
+Selumetinib,Kinase inhibitor
+Ravoxertinib,Kinase inhibitor
+Trametinib,Kinase inhibitor
+Ulixertinib,Kinase inhibitor
+AMG-900,Kinase inhibitor
+MK-5108,Kinase inhibitor
+MLN-8054,Kinase inhibitor
+SNS-314,Kinase inhibitor
+(+)-JQ-1,BET inhibitor
+Bromosporine,BET inhibitor
+Molibresib,BET inhibitor
+Apabetalone,BET inhibitor
+Geldanamycin,HSP90 inhibitor
+Tanespimycin,HSP90 inhibitor
+Paclitaxel,Mitotic inhibitor
+CHM-1,Mitotic inhibitor
+Nocodazole,Mitotic inhibitor
+Colchicine,Mitotic inhibitor
+GSK2879552,Methyltransferase inhibitor
+Iadademstat,Methyltransferase inhibitor
+Tranylcypromine,MAOi
+Pinometostat,Methyltransferase inhibitor
+Tazemetostat,Methyltransferase inhibitor
+Pemrametostat,Methyltransferase inhibitor
+Lirametostat,Methyltransferase inhibitor
+Onametostat,Methyltransferase inhibitor
+5-Azacytidine,Chemo drug
+Decitabine,Chemo drug
+5-Fluoro-2'-deoxycytidine,Chemo drug
+Gemcitabine,Chemo drug
+Methotrexate,Chemo drug
+Actinomycin D,Chemo drug
+5-Fluorouracil,Chemo drug
+Pemetrexed,Chemo drug
+Cisplatin,Chemo drug
+Carboplatin,Chemo drug
+Oxaliplatin,Chemo drug
+Ixazomib,Proteasome inhibitor
+MG-132,Proteasome inhibitor
+Carfilzomib,Proteasome inhibitor
+Bortezomib,Proteasome inhibitor
+PJ34,PARP inhibitor
+Olaparib,PARP inhibitor
+Talazoparib,PARP inhibitor
+Rucaparib,PARP inhibitor
+Niraparib,PARP inhibitor
+Veliparib,PARP inhibitor
+Thalidomide,IMiD
+VHL ligand 1,E3 ligase ligands
+Nutlin-3,E3 ligase ligands
+Serdemetan,E3 ligase ligands
+VH298,E3 ligase ligands
+Iberdomide,IMiD
+Lenalidomide,IMiD
+Pomalidomide,IMiD
+Doxorubicin,Chemo drug
+Cyclophosphamide,Chemo drug
+Vincristine,Mitotic inhibitor
+Prednisone,Hormone-like
+CHDI00465983,HDAC inhibitor
+CHDI00390576,HDAC inhibitor
+TMP195,HDAC inhibitor
+TMP269,HDAC inhibitor
+NFAT activation inhibitor III,NFAT activation inhibitor
+Cyclosporin A,Immunosuppressor
+LMK235,HDAC inhibitor
